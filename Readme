@@ -1,0 +1,18 @@
+Importante tener los dos archivos, autoscan.py y start.sh!!!!!!!
+En el archivo de start.sh (Por la ultima línea) hay que modificar la ruta completa del archivo autoscan.py
+
+
+Este es un script de bash que a la vez utiliza un script de python para hacer un nmap.
+
+Al iniciar el script con ./start.sh nor pedira por la terminal que le ingresemos una IP.
+Al indicarle la IP, nos creara dos directorios. 
+
+-El primer directorio se creara con el nombre de la IP introducida.
+-El segundo directorio se creara dentro del directorio creado en el paso anterior con el nombre de nmap.
+
+Seguidamente el script lanzara un ping de un paquete a la IP proporcionada anteriormente.
+En la shell nos devolvera el valor del TTL y nos indicara si es un SO linux o windows.
+Acto seguido comenzara a realizar el nmap, al terminar podremos ver los resultados en el directorio de nmap creado anteriormente, dentro del directorio con el nombre de la IP
+
+
+
